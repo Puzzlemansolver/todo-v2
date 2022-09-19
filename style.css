@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Poppins&family=Roboto&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(104, 186, 240);
+    margin: 0;
+}
+.wrapper{
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+}
+.head{
+    background-color: aliceblue;
+}
+.head input{
+width: 90%;
+height: 30px;
+padding: 10px;
+border-radius: 5px;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    border-bottom: solid black 1px;
+}
+.controls{
+display: flex;
+justify-content: space-between;
+
+}
+.controls span.active{
+    color: blue;
+}
+.control-item{
+    margin: 0px 10px;
+}
+
+.control-item:hover{
+    cursor: pointer;
+}
+
+.filters button{
+    background-color: rgb(96, 135, 224);
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.filters button:hover{
+    cursor: pointer;
+}
+
+.task-item .settings{
+    cursor: pointer;
+}
+.task-list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.task-item{
+    border-bottom: solid rgba(100, 100, 100, 0.609) 1px;
+    
+}
+.task-list label{
+    display: flex;
+}
+.task-list label p.checked{
+    text-decoration: line-through;
+}
+.task-menu{
+    flex-direction: column;
+    position: absolute;
+    background-color: wheat;
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(0);
+    transform-origin: top le;
+    transition: transform .3s ease;
+    
+}
+.settings .task-menu.show{
+    transform: scale(1);
+}
+
+
+.task-menu li:hover{
+    color: brown;
+}
